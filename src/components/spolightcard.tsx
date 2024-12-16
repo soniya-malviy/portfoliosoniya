@@ -2,27 +2,25 @@ import { CardSpotlight } from "@/components/ui/card-spotlight";
 
 export function CardSpotlightDemo() {
     return (
-        <CardSpotlight className="relative h-[28rem] w-[40rem]  translate-x-80">
+        <CardSpotlight className="relative h-[28rem] w-[40rem] translate-x-80">
             <p className="text-xl font-bold relative z-20 mt-2 text-white flex justify-center">
                 Soniya Malviya
             </p>
             <div className="text-neutral-200 mt-4 relative z-20">
-
+                {/* Add additional content here if needed */}
             </div>
             <p className="text-neutral-300 mt-4 relative z-40 text-lg flex justify-center text-center">
-                Hi, I'm Soniya Malviya, a BTech student in Computer Science and Artificial Intelligence at Rishihood University. I specialize in JavaScript, HTML-CSS, Node.js, Express.js, React.js, and Next.js, with a strong interest in DSA and problem-solving.
-
-                I have contributed to the GirlScript Summer of Code as a developer and later as a mentor, guiding students in open-source contributions. Outside academics, I enjoy badminton and exploring emerging technologies and innovative projects.
-
-                I'm passionate about learning, creating, and making an impact!
-
-
-
-
-
-
-
-
+                Hi, I&apos;m Soniya Malviya, a BTech student in Computer Science and Artificial Intelligence at Rishihood University. 
+                I specialize in JavaScript, HTML-CSS, Node.js, Express.js, React.js, and Next.js, with a strong interest in DSA and problem-solving.
+                <br />
+                <br />
+                I have contributed to the GirlScript Summer of Code as a developer and later as a mentor, guiding students in open-source contributions. 
+                Outside academics, I enjoy badminton and exploring emerging technologies and innovative projects.
+                <br />
+                <br />
+                I&apos;m passionate about learning, creating, and making an impact!
+                <br />
+                <br />
                 I am always eager to learn, grow, and contribute to impactful projects that make a difference!
             </p>
         </CardSpotlight>
