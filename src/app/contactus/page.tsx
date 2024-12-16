@@ -27,7 +27,7 @@ function page() {
                 >
                     <input
                         type="text" name="name"
-                        placeholder="Adityakammati.workspace@gmail.com"
+                        placeholder="soniya.04malviya@gmail.com"
                         className="h-10 rounded-lg border border-neutral-800 focus:ring-2 focus:ring-teal-500  w-full relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700 placeholder:p-2"
                     />
                 </form>
