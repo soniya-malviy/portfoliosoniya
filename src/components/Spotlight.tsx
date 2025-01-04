@@ -2,7 +2,7 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import { Spotlight } from "./ui/Spotlight";
 import {SparklesCore} from "@/components/ui/sparkles";
-import {SparklesPreview} from "@/components/Header";
+// import {SparklesPreview} from "@/components/Header";
 
 export function SpotlightPreview() {
     return (
