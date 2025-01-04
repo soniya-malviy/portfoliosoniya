@@ -20,12 +20,14 @@ function page() {
                     Connect with Me
                 </h1>
                 <p className="text-neutral-500 max-w-lg mx-auto my-2 text-sm text-center relative z-10">
-                    Hello! 👋 I’d love to hear from you! Whether you have a question, feedback, or an exciting collaboration in mind, don’t hesitate to reach out. Whether it's about a tech opportunity or just to share a friendly hello, I’m always open to connect and explore new possibilities together!
-                </p>
+    Hello! 👋 I&rsquo;d love to hear from you! Whether you have a question, feedback, or an exciting collaboration in mind, don&rsquo;t hesitate to reach out. Whether it&rsquo;s about a tech opportunity or just to share a friendly hello, I&rsquo;m always open to connect and explore new possibilities together!
+</p>
+
                 <form
                     action="https://getform.io/f/jawxyylb"
                     method="POST"
                     encType="multipart/form-data"
+                    onSubmit={handleSubmit}
                 >
                     <input
                         type="text" name="name"
