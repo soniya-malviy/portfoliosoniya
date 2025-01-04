@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import TitleText from "../../components/TitleText";
-// import Categories from "../../components/Categories";
+import Categories from "../../components/Categories";
 import {products} from "@/utils/data";
 import Image from "next/image";
 import Link from "next/link";
