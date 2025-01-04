@@ -4,6 +4,7 @@ import defaultTheme from "tailwindcss/defaultTheme";
 import colors from "tailwindcss/colors";
 import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
 
+// Function to add color variables
 const addVariablesForColors = ({ addBase, theme }: any) => {
   const allColors = flattenColorPalette(theme("colors"));
   const newVars = Object.fromEntries(
@@ -16,7 +17,7 @@ const addVariablesForColors = ({ addBase, theme }: any) => {
 };
 
 const config: Config = {
-  darkMode: ["class"],
+  darkMode: ["class"],  // Retaining the dark mode setting from the first file
   content: [
     "./src/projects/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -25,6 +26,7 @@ const config: Config = {
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",  // Merging content from both files
   ],
   prefix: "",
   theme: {
@@ -101,7 +103,7 @@ const config: Config = {
         },
       },
       animation: {
-        shimmer: "shimmer 2s linear infinite",
+        shimmer: "shimmer 2s linear infinite",  // Merged shimmer animation from both files
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         spotlight: "spotlight 2s ease .75s 1 forwards",

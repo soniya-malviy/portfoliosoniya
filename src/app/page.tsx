@@ -7,9 +7,9 @@ import { HeroBanner } from "@/components/HeroBanner";
 import Navbar from "@/components/Navbar";
 import RecentBlogs from "@/components/RecentBlogs";
 import RecentWork from "@/components/RecentWork";
-import Skills from "@/components/Skills";
+import Instructors from "@/components/Skills";
 import Image from "next/image";
-import {SparklesPreview} from "@/components/Header";
+import {AnimatedTestimonialsDemo} from "@/components/Header";
 import {SpotlightPreview} from "@/components/Spotlight";
 import {SparklesCore} from "@/components/ui/sparkles";
 
@@ -18,7 +18,7 @@ export default function Home() {
       <>
 
         {/*<SparklesPreview/>*/}
-<SparklesPreview/>
+<AnimatedTestimonialsDemo/>
 
         <div className="bg-[#050709]">
 
@@ -26,7 +26,7 @@ export default function Home() {
 
           <Education/>
           <div className="mt-10">
-            <Skills/>
+            <Instructors/>
 
           </div>
           <div className="mt-10">

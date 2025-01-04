@@ -1,41 +1,40 @@
-"use client";
-import React from "react";
-import { SparklesCore } from "./ui/sparkles";
-import {Spotlight} from "@/components/ui/Spotlight";
+// src/components/AnimatedTestimonialsDemo.tsx
 
-export function SparklesPreview() {
-    return (
-        <>
-            <Spotlight/>
-        <div className=" h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
-            <h1 className="md:text-3xl text-3xl lg:text-7xl font-bold text-center text-white relative z-20">
-                SONIYA MALVIYA
-            </h1>
-            <div className="w-[40rem] h-40 relative">
-                {/* Gradients */}
-                <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
-                <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
-                <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
-                <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
+"use client"; // Ensure this file is treated as a Client Component
 
-                {/* Core component */}
-                <SparklesCore
-                    background="transparent"
-                    minSize={0.4}
-                    maxSize={1}
-                    particleDensity={1200}
-                    className="w-full h-full"
-                    particleColor="#FFFFFF"
-                />
+import { AnimatedTestimonials } from "@/components/ui/animated-testimonials"; // Import animated testimonials
 
-                {/* Radial Gradient to prevent sharp edges */}
-                <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
-            </div>
-            <div className="text-white mt-[-20]">
-                NST  x  Rishihood University || Fullstack developer || Gssoc Mentor
-            </div>
-        </div>
-        </>
-    );
+export function AnimatedTestimonialsDemo() {
+  const testimonials = [
+    {
+      quote:
+        "Hello! I'm Soniya Malviya, a passionate and driven Computer Science and Artificial Intelligence student at Rishihood University. My journey in technology is fueled by a deep interest in frontend development, data structures, and algorithms. With hands-on experience in React.js, HTML, CSS, and GitHub, I bring a creative approach to crafting intuitive user experiences.",
+      name: "SONIYA MALVIYA",
+      designation: "IIT Roorkee Intern",
+      src: "/myimage.jpeg",
+    },
+    {
+      quote:
+        "My dedication to continuous learning has led me to contribute actively to open-source projects and mentor in initiatives like the GirlScript Summer of Code. I thrive on solving complex problems, mentoring upcoming developers, and creating innovative solutions that make a difference.",
+      name: "SONIYA MALVIYA",
+      designation: "Open source contributor",
+      src: "/myimage.jpeg",
+    },
+    {
+      quote:
+        "Whether it's developing a clothing e-commerce platform or enhancing my logic-building skills through challenging coding problems, I aim to make each project better than the last. Let’s connect and explore the exciting possibilities of technology together!",
+      name: "SONIYA MALVIYA",
+      designation: "Frontend Developer and Problem-Solving Enthusiast",
+      src: "/myimage.jpeg",
+    },
+  ];
 
+  return (
+    <div>
+      {/* Render Animated Testimonials */}
+      <AnimatedTestimonials testimonials={testimonials} />
+
+      
+    </div>
+  );
 }
