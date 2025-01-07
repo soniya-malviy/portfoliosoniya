@@ -5,6 +5,7 @@ const nextConfig = {
       { protocol: "https", hostname: "assets.aceternity.com" },
       { protocol: "https", hostname: "aceternity.com" },
       { protocol: "https", hostname: "pbs.twimg.com" },
+      { protocol: "https", hostname: "educationpost.in" }, // Add this line
     ],
   },
 };
