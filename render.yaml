@@ -1,0 +1,12 @@
+services:
+  - type: web_service
+    name: portfolio
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    autoDeploy: true
+    memory: 512MB
+    envVars:
+      - key: DATABASE_URL
+        value: "your-database-url"
