@@ -97,11 +97,19 @@ const config: Config = {
         },
         spotlight: {
           "0%": {
+<<<<<<< HEAD
             opacity: '0',
             transform: "translate(-72%, -62%) scale(0.5)",
           },
           "100%": {
             opacity: '1',
+=======
+            opacity: "0",
+            transform: "translate(-72%, -62%) scale(0.5)",
+          },
+          "100%": {
+            opacity: "1",
+>>>>>>> 475f705cb14179ab543f0d23ae2b5c4fad79db21
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
