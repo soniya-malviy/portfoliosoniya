@@ -9,6 +9,7 @@ interface CatListProps {
   setSelectedCategoryId: (categoryId: number) => void;
   categories: Category[];
 }
+
 const Categories = ({
   selectedCategoryId,
   setSelectedCategoryId,
@@ -31,6 +32,7 @@ const Categories = ({
       </button>
       {categories.map((cat) => (
         <button
+          key={cat.id} 
           onClick={() => setSelectedCategoryId(cat.id)}
           className={`${
             selectedCategoryId == cat.id && "bg-purple-500"
@@ -42,5 +44,5 @@ const Categories = ({
     </motion.div>
   );
 };
-//
+
 export default Categories;
