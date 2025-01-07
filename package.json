@@ -41,7 +41,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.1.4",
     "postcss": "^8",
-    "tailwindcss": "^3.3.0",
+    "tailwindcss": "^3.4.17",
     "typescript": "^5"
   },
   "description": "This repository contains the corresponding tutorial available on our YouTube channel, <a href=\"https://www.youtube.com/@CodeScrapperOfficial/videos\" target=\"_blank\"><b>Code Scrapper</b></a>.",

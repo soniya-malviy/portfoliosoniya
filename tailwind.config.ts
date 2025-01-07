@@ -1,8 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 import type { Config } from "tailwindcss";
-import defaultTheme from "tailwindcss/defaultTheme";
-import colors from "tailwindcss/colors";
-import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
+const defaultTheme = require( "tailwindcss/defaultTheme");
+
+
+const svgToDataUri = require("mini-svg-data-uri");
+const colors = require("tailwindcss/colors");
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
+
 
 // Function to add color variables
 const addVariablesForColors = ({ addBase, theme }: any) => {
