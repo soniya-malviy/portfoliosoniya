@@ -1,18 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 import type { Config } from "tailwindcss";
-const defaultTheme = require( "tailwindcss/defaultTheme");
-
+const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
 
-
 // Function to add color variables
 const addVariablesForColors = ({ addBase, theme }: any) => {
   const allColors = flattenColorPalette(theme("colors"));
   const newVars = Object.fromEntries(
-      Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
 
   addBase({
@@ -21,7 +19,7 @@ const addVariablesForColors = ({ addBase, theme }: any) => {
 };
 
 const config: Config = {
-  darkMode: ["class"],  // Retaining the dark mode setting from the first file
+  darkMode: ["class"], // Retaining the dark mode setting
   content: [
     "./src/projects/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -30,7 +28,7 @@ const config: Config = {
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",  // Merging content from both files
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}", // Merging content paths
   ],
   prefix: "",
   theme: {
@@ -97,19 +95,17 @@ const config: Config = {
         },
         spotlight: {
           "0%": {
-
             opacity: "0",
             transform: "translate(-72%, -62%) scale(0.5)",
           },
           "100%": {
             opacity: "1",
-
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
       },
       animation: {
-        shimmer: "shimmer 2s linear infinite",  // Merged shimmer animation from both files
+        shimmer: "shimmer 2s linear infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         spotlight: "spotlight 2s ease .75s 1 forwards",
