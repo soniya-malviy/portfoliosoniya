@@ -109,4 +109,4 @@ const LabelInputContainer = ({ children, className }: { children: React.ReactNod
   );
 };
 
-export default BackgroundBeamsDemo;
+
