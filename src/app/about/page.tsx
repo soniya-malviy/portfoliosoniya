@@ -10,7 +10,7 @@ function AnimatedTestimonialsDemo() {
       quote:
         "Hello! I'm Soniya Malviya, a passionate and driven Computer Science and Artificial Intelligence student at Rishihood University. My journey in technology is fueled by a deep interest in frontend development, data structures, and algorithms. With hands-on experience in React.js, HTML, CSS, and GitHub, I bring a creative approach to crafting intuitive user experiences.",
       name: "SONIYA MALVIYA",
-      designation: "IIT Roorkee Intern",
+      designation: "Interned at IIT Roorkee and Social Studies Foundation (SSF)",
       src: "/myimage.jpeg",
     },
     {
