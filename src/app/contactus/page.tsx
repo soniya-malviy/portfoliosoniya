@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { cn } from "@/utils/cn"; // Assuming 'cn' is a utility for conditional class names
 
-export function BackgroundBeamsDemo() {
+function BackgroundBeamsDemo() {
   // State to handle form submission, email, message and toast visibility
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState(""); // New state for the message input
@@ -109,4 +109,6 @@ const LabelInputContainer = ({ children, className }: { children: React.ReactNod
   );
 };
 
+
+export default BackgroundBeamsDemo;
 
