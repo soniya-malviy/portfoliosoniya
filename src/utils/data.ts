@@ -20,8 +20,8 @@ export const products = [
     thumbnail: "/laptop-2.jpeg",
   },
   {
-    title: "Chatbot",
-    link: "https://buzzbot-jet.vercel.app/",
+    title: "Fuel Calculator",
+    link: "https://transcendent-squirrel-2cdd78.netlify.app/",
     thumbnail: "/mobile-1.jpeg",
   }
 ];
@@ -49,10 +49,10 @@ export const categories: Category[] = [
 export const work: Product[] = [
   {
     id: 1,
-    name: "Buzzbot",
-    hostedlink: "https://buzzbot-jet.vercel.app/",
-    githublink: "https://github.com/soniya-malviy/buzzbot.git",
-    desc: "A Chatbot to make search easy with concise and focused data.",
+    name: "Fuel Calculator",
+    hostedlink: "https://transcendent-squirrel-2cdd78.netlify.app/",
+    githublink: "https://transcendent-squirrel-2cdd78.netlify.app/",
+    desc: "Easy to calculate how much fuel you need for distance at what cost",
     image: "/mobile-1.jpeg",
     categoryId: 1,
   },
@@ -70,7 +70,7 @@ export const work: Product[] = [
     name: "CureConnect",
     hostedlink: "https://cure-connect-full-satck.vercel.app/",
     githublink: "https://github.com/soniya-malviy/CureConnectFullSatck.git",
-    desc: "Doctor appointment booking website with secure authentication.",
+    desc: "Doctor appointment booking website with secure authentication.(Wait for some time to load data from database)",
     image: "/mobile-2.jpeg",
     categoryId: 1,
   },
